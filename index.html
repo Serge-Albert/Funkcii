@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let num = 5.7;
+        let num2 = 30;
+
+        let result = 'ВВП России ' + num + 'трл. долл., ВВП США ' + num2 + 'трл. долл.';
+
+        console.log(result);
+
+        let result2 = `ВВП России ${num} трл.долл., ВВП США ${num2} трл.долл.`;
+        console.log(result2)
+
+        let first = 'Лена';
+        let second = 'Ваня';
+        let third = 'Сергей';
+        let friends = 'Друзья ' + first + " и " + second + " любят приходить в дом, где живет " + third;
+        console.log(friends);
+
+        let friends2 = `Друзья ${first} и ${second} любят приходить в дом, где живет ${third}`;
+        console.log(friends2);
+
+        function Albert(Golub) {
+            console.log("Hello", Golub);
+        }
+        Albert()
+        Albert()
+        Albert()
+        Albert("Трамп")
+        Albert("Biden")
+        Albert("Putin")
+
+        function diff(a, b) {
+            console.log(a - b);
+
+        }
+        diff(7, 5);
+        diff(5, 7);
+        diff(11, 8);
+
+
+        function Serge(a, b) {
+            console.log(a * b);
+        }
+        Serge(11, 10)
+
+        function checkEqual(a, b) {
+            if (a === b) {
+                console.log('Equal');
+            } else {
+                console.log('Not equal');
+            }
+        }
+        checkEqual(11, 10)
+        checkEqual(10, 10)
+
+        function compair(a, b, c, d) {
+            console.log(a > b && a > c && a > d);
+            console.log(b > a && b > c && b > d);
+            console.log(c > a && c > b && c > d);
+            console.log(d > a && d > b && d > c);
+            if (a > b && a > c && a > d) {
+                console.log('число а самое большое', a)
+            } else if (b > a && b > c && b > d) {
+                console.log('число b самое большое', b);
+            } else if (c > a && c > b && b > d) {
+                console.log('число c самое большое', c);
+            } else if (d > a && d > b && d > c) {
+                console.log('число d самое большое', d);
+            } else {
+                console.log('проверьте введенные данные');
+            }
+
+        }
+        compair(7, 8, 9, 10)
+        compair(12, 9, 11, 10)
+        // compair('Число a')
+
+        function min(a, b) {
+            if (a > b) {
+                return b
+            } else if (b > a) {
+                return a
+            } else if (a === b) {
+                return ('числа равны')
+            }
+        }
+
+        console.log(min(8, 8));
+
+        function Igor(ITED) {
+            console.log("Hello", ITED);
+        }
+        Igor("ITED")
+        //////////////////////////////////////////////////////////////
+        function Igor1(ITED) {
+            return "Hello" + ITED
+        }
+        let hello_rusult = Igor1(" World")
+        console.log(hello_rusult);
+        ///////////////////////////////////////////////////////////////
+
+        console.log(Igor1(" ITED the BEST"));
+
+        function kvadrat(a) {
+            console.log(a * a);
+        }
+        kvadrat(5)
+
+        function kvadrat2(a) {
+            return a * a
+        }
+        console.log(kvadrat2(10));
+
+
+
+    </script>
+</body>
+
+</html>
